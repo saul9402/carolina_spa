@@ -1,6 +1,7 @@
-body{
+body {
     background-color: #f8f8f8;
 }
+
 .encabezado {
     font-size: 2.4rem;
     font-family: 'Lato', sans-serif;
@@ -8,23 +9,26 @@ body{
     line-height: 2.4rem
 }
 
-.encabezado span{
+.encabezado span {
     font-size: 3.8rem;
     font-family: 'Italianno', cursive;
     color: #e082a8
 }
 
-/** Sociales **/ 
+/** Sociales **/
+
 .sociales ul {
     /**Con esto le quitas los estilos que tiene el ul por defecto*/
     list-style: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 .sociales ul li {
     position: relative;
     display: inline-block;
 }
+
 .sociales ul li a::before {
     /**Con esot agrega el font-awesome y el color a las imagenes que vas a poner*/
     font-family: 'FontAwesome';
@@ -36,58 +40,67 @@ body{
     font-size: 2rem;
     color: #e082a8;
 }
+
 /**con esto se agregan los iconos, el numero que se ponga en la propiedad content 
     se refiere a una imagen en concreto (buscar en la documentación)*/
-.sociales ul li a[href*="facebook.com"]::before{
+
+.sociales ul li a[href*="facebook.com"]::before {
     content: '\f230';
 }
-.sociales ul li a[href*="twitter.com"]::before{
+
+.sociales ul li a[href*="twitter.com"]::before {
     content: '\f081';
 }
-.sociales ul li a[href*="instagram.com"]::before{
+
+.sociales ul li a[href*="instagram.com"]::before {
     content: '\f16d';
 }
-.sociales ul li a[href*="pinterest.com"]::before{
+
+.sociales ul li a[href*="pinterest.com"]::before {
     content: '\f0d2';
 }
-.sociales ul li a[href*="youtube.com"]::before{
+
+.sociales ul li a[href*="youtube.com"]::before {
     content: '\f16a';
 }
+
 /* NAVEGACION */
 
-.navegacion{
+.navegacion {
     background-color: #8ed3cc
 }
-.navbar-light .navbar-toggler{
+
+.navbar-light .navbar-toggler {
     background-color: white
 }
 
-.navbar-light .navbar-brand,
-.navbar-light .navbar-brand:hover {
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:hover {
     color: white
 }
 
 /* con esta parte "pintas" lo que aparece arriba y abajo del menu de navegacion */
-.nav-principal{
-    background-image: url(../img/border_horizontal.png),
-                      url(../img/border_horizontal.png);
+
+.nav-principal {
+    background-image: url(../img/border_horizontal.png), url(../img/border_horizontal.png);
     background-repeat: repeat-x;
     background-position: 0px top, 0px bottom;
 }
 
-.nav-link{
+.nav-link {
     color: white;
     font-size: 1.4rem;
     transition: all .5s ease-in-out;
     font-family: 'Raleway', sans-serif;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background-color: #bde8dd;
     color: black
 }
+
 /* CARRUSEL */
-.carousel-caption h3{
+
+.carousel-caption h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     font-weight: 900;
@@ -96,20 +109,22 @@ body{
 
 /* Nuevo sitio */
 
-.nuevo-sitio p{
+.nuevo-sitio p {
     font-family: 'Lato', sans-serif;
     color: #979797;
     font-size: 1.6rem;
 }
 
 /* Servicios */
-.img-servicio img{
+
+.img-servicio img {
     border: 6px solid white;
     -webkit-transition: transform .3s ease;
     -ms-transition: transform .3s ease;
     transition: transform .3s ease;
 }
-.img-servicio img:hover{
+
+.img-servicio img:hover {
     /*Con es to le das una transformacion a la imagen cuando haya un hover sobre ella para que crezca un poco*/
     transform: scale(1.2) rotate(10deg);
     -webkit-transform: scale(1.2) rotate(10deg);
@@ -121,7 +136,7 @@ body{
     margin-top: -5rem
 }
 
-.servicio-info .btn-primary{
+.servicio-info .btn-primary {
     border-radius: 0;
     background-color: #e082a8;
     border: none;
@@ -129,35 +144,35 @@ body{
 
 /* Horarios */
 
-.horario{
+.horario {
     background-color: #8ed3cc;
     color: white;
-       
 }
-.horario h2{
+
+.horario h2 {
     font-size: 2.2rem;
     font-family: 'Lato', sans-serif;
 }
-.horario .table{
-    border: 2px solid #e082a8;
 
+.horario .table {
+    border: 2px solid #e082a8;
 }
-.horario .table thead{
+
+.horario .table thead {
     background-color: #e082a8;
 }
 
-.horario .table td,
-.horario .table thead th{
+.horario .table td, .horario .table thead th {
     border: none;
 }
 
-.horario .table tbody tr td{
+.horario .table tbody tr td {
     padding: .35rem;
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
 }
 
-.bg-horario{
+.bg-horario {
     background-image: url(../img/bg_horarios.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -166,27 +181,30 @@ body{
 }
 
 /* PRODUCTOS */
-.productos .card{
+
+.productos .card {
     border: none;
 }
 
-.productos .card a{
+.productos .card a {
     color: black;
 }
-.productos .card a:hover{
+
+.productos .card a:hover {
     text-decoration: none;
 }
 
-.productos .card h3{
+.productos .card h3 {
     color: #e082a8;
     font-size: 1.2rem;
     font-family: 'Lato', sans-serif;
 }
-.productos .card p{
+
+.productos .card p {
     font-size: .8rem
 }
 
-.productos .card precio{
+.productos .card precio {
     font-size: 1.6rem;
     color: #979797;
 }
@@ -201,24 +219,24 @@ body{
     color: white;
 }
 
-@media(min-width: 992px){
-    .citas{
+@media(min-width: 992px) {
+    .citas {
         background-size: cover;
     }
 }
 
-.citas h3{
+.citas h3 {
     font-size: 3.5rem;
     font-family: 'Lato', sans-serif;
 }
 
-.citas p{
+.citas p {
     font-size: 1.2rem;
     /*Con esto pones interlineado*/
     line-height: 2.6rem;
 }
 
-.citas .btn-primary{
+.citas .btn-primary {
     background-color: #8ed3cc;
     border: 0;
     padding: 1rem 5rem;
@@ -228,18 +246,19 @@ body{
 }
 
 /* Footer */
-footer .copyright{
+
+footer .copyright {
     color: #979797;
     font-size: .8rem;
 }
 
 /* HERO */
 
-.hero{
+.hero {
     position: relative;
 }
 
-.hero h2{
+.hero h2 {
     position: absolute;
     bottom: 2rem;
     right: 0;
@@ -250,7 +269,7 @@ footer .copyright{
     font-size: 2.8rem;
 }
 
-.contenido-principal p{
+.contenido-principal p {
     font-size: 1.2rem;
     line-height: 2.2rem;
     font-family: 'Lato', sans-serif;
@@ -265,31 +284,54 @@ aside {
 
 /* servicios */
 
-#servicios .card-header{
+#servicios .card-header {
     background-color: #e082a8;
     padding: 0 1.25rem;
 }
 
-#servicios .card-header .btn-link{
+#servicios .card-header .btn-link {
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
 }
 
-#servicios .card-body{
+#servicios .card-body {
     font-size: 1.3rem;
 }
 
 /* cupon */
+
 .cupon {
     border: 3px dashed white;
     font-family: 'Lato', sans-serif;
 }
 
-.cupon .display-4{
+.cupon .display-4 {
     font-size: 2rem;
 }
 
-.cupon p{
+.cupon p {
     font-size: 1.2rem;
+}
+
+/* productos */
+
+/*con esto cambias las columnas que se muestran en el efecto masonry*/
+@media(min-width: 576px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+    }
+}
+
+@media(min-width: 1199px) {
+    .card-columns {
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+    }
 }
