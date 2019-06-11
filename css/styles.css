@@ -1,1 +1,258 @@
-/*** Add your styles here **/
+body{
+    background-color: #f8f8f8;
+}
+.encabezado {
+    font-size: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    line-height: 2.4rem
+}
+
+.encabezado span{
+    font-size: 3.8rem;
+    font-family: 'Italianno', cursive;
+    color: #e082a8
+}
+
+/** Sociales **/ 
+.sociales ul {
+    /**Con esto le quitas los estilos que tiene el ul por defecto*/
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    /**Con esot agrega el font-awesome y el color a las imagenes que vas a poner*/
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #e082a8;
+}
+/**con esto se agregan los iconos, el numero que se ponga en la propiedad content 
+    se refiere a una imagen en concreto (buscar en la documentación)*/
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+/* NAVEGACION */
+
+.navegacion{
+    background-color: #8ed3cc
+}
+.navbar-light .navbar-toggler{
+    background-color: white
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+    color: white
+}
+
+/* con esta parte "pintas" lo que aparece arriba y abajo del menu de navegacion */
+.nav-principal{
+    background-image: url(../img/border_horizontal.png),
+                      url(../img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom;
+}
+
+.nav-link{
+    color: white;
+    font-size: 1.4rem;
+    transition: all .5s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-link:hover{
+    background-color: #bde8dd;
+    color: black
+}
+/* CARRUSEL */
+.carousel-caption h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+}
+
+/* Nuevo sitio */
+
+.nuevo-sitio p{
+    font-family: 'Lato', sans-serif;
+    color: #979797;
+    font-size: 1.6rem;
+}
+
+/* Servicios */
+.img-servicio img{
+    border: 6px solid white;
+    -webkit-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+}
+.img-servicio img:hover{
+    /*Con es to le das una transformacion a la imagen cuando haya un hover sobre ella para que crezca un poco*/
+    transform: scale(1.2) rotate(10deg);
+    -webkit-transform: scale(1.2) rotate(10deg);
+    -ms-transform: scale(1.2) rotate(10deg);
+}
+
+.servicio-info {
+    background-color: white;
+    margin-top: -5rem
+}
+
+.servicio-info .btn-primary{
+    border-radius: 0;
+    background-color: #e082a8;
+    border: none;
+}
+
+/* Horarios */
+
+.horario{
+    background-color: #8ed3cc;
+    color: white;
+       
+}
+.horario h2{
+    font-size: 2.2rem;
+    font-family: 'Lato', sans-serif;
+}
+.horario .table{
+    border: 2px solid #e082a8;
+
+}
+.horario .table thead{
+    background-color: #e082a8;
+}
+
+.horario .table td,
+.horario .table thead th{
+    border: none;
+}
+
+.horario .table tbody tr td{
+    padding: .35rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+
+.bg-horario{
+    background-image: url(../img/bg_horarios.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+/* PRODUCTOS */
+.productos .card{
+    border: none;
+}
+
+.productos .card a{
+    color: black;
+}
+.productos .card a:hover{
+    text-decoration: none;
+}
+
+.productos .card h3{
+    color: #e082a8;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+.productos .card p{
+    font-size: .8rem
+}
+
+.productos .card precio{
+    font-size: 1.6rem;
+    color: #979797;
+}
+
+/* CITAS */
+
+.citas {
+    background-image: url(../img/bg_citas.jpg);
+    background-repeat: no-repeat;
+    position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+
+@media(min-width: 992px){
+    .citas{
+        background-size: cover;
+    }
+}
+
+.citas h3{
+    font-size: 3.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.citas p{
+    font-size: 1.2rem;
+    /*Con esto pones interlineado*/
+    line-height: 2.6rem;
+}
+
+.citas .btn-primary{
+    background-color: #8ed3cc;
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer .copyright{
+    color: #979797;
+    font-size: .8rem;
+}
+
+/* HERO */
+
+.hero{
+    position: relative;
+}
+
+.hero h2{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    background-color: #8ed3cc;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 2.8rem;
+}
+
+.contenido-principal p{
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-family: 'Lato', sans-serif;
+}
+

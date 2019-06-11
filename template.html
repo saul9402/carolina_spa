@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Italianno|Lato:400,700,900|Raleway:400,700,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="encabezado-sitio container">
+    <!-- align-items-center los centra verticalmente; tiene valores posible como; end; start; baseline; stretch  -->
+    <!-- between; center; around; start; end -->
+    <div class="row justify-content-md-between align-items-center">
+      <div class="col-lg-4">
+        <a href="" class="">
+          <img src="img/logo.svg" class="img-fluid mx-auto d-block py-4" alt="" />
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <nav class="sociales text-center text-lg-right">
+          <ul>
+            <li>
+              <a href="http://facebook.com">
+                <!-- con la clase sr-only indicas que el texto solo estará disponible para screen-reader -->
+                <span class="sr-only"> Facebook</span></a>
+            </li>
+            <li>
+              <a href="http://twitter.com">
+                <span class="sr-only"> Twitter</span></a>
+            </li>
+            <li>
+              <a href="http://instagram.com">
+                <span class="sr-only"> Instragram</span></a>
+            </li>
+            <li>
+              <a href="http://pinterest.com">
+                <span class="sr-only"> Pinteres</span></a>
+            </li>
+            <li>
+              <a href="http://youtube.com">
+                <span class="sr-only"> Youtube</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="navegacion mt-3 py-2">
+    <!-- la clase navbar-expand-md indica que cuando el dispositivo sea mediano o más grande 
+          se muestren todos los iconos menor a eso se eberá mostrar un menu de "hamburguesa"-->
+    <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
+      <!-- Menu responsive -->
+      <!-- Con esto indicas que este boton va a manejar un evento toggle para una barra de navegación -->
+      <!-- el data-target te srive para enlazar el contenido que deberá mostrarse o dejarse de mostrar -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_principal"
+        aria-label="Mostrar Navegacion">
+        <!-- Con esto pones el icono de menu de hamburguesa -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="" class="navbar-brand d-lg-none">Carolina Spa</a>
+      <div class="container">
+        <!-- Con este div indicas que este será el contenido a mostrar/no mostrar por el boton de arriba -->
+        <div class="collapse navbar-collapse" id="nav_principal">
+          <!-- nav-justified permite separar los elementos de este menú cada uno con el mismo espacio y ocupando tdo el espacio disponible -->
+          <!-- flex-column indica que se va a ver como columna y flex-sm-row indica que se verá como fila el sm indica a partir de que tamaños se aplicara cada estilo -->
+          <ul class="nav nav-justified w-100 flex-column flex-sm-row">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="nosotros.html"class="nav-link">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <!--collapse-->
+      </div>
+      <!--container-->
+    </nav>
+  </div>
+
+  <div class="container pt-4">
+    <div class="row no-gutters">
+      <div class="col-12 hero">
+        <img src="img/nosotros.jpg" class="img-fluid" alt="">
+        <h2 class="text-uppercase d-none d-md-block py-3 px-5">
+          Titulo aqui
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-4">
+    <div class="row">
+      <main class="col-lg-8 contenido principal">
+        <h2 class="d-block d-md-none text-uppercase text-center">
+            Titulo aqui
+        </h2>
+      </main>
+      <aside class="col-lg-4 pt-4 pt-lg-0">
+        <div class="sidebar">
+          <h2 class="text-center text-uppercase mt-4">
+            Algo aqui
+          </h2>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <footer class="footer-sitio pt-3 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="text-uppercase text-center pb-4">
+            Nosotros
+          </h3>
+          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus voluptates quisquam, a,
+            incidunt veniam quas tempora voluptate id animi magni? Quia culpa minus maxime dolores ex voluptates
+            consequatur autem! </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h3 class="text-uppercase  pb-4">
+            Horario
+          </h3>
+          <p>Lun - Vie: 9AM - 7PM</p>
+          <p>Sábado: 10AM - 2PM</p>
+          <p>Domingo: Cerrado</p>
+        </div>
+        <div class="col md-4 text-center">
+          <h3 class="text-uppercaso pb-4">Contacto</h3>
+          <p>Direccion 1</p>
+          <p>Direccion 2</p>
+          <nav class="sociales text-center">
+            <ul>
+              <li>
+                <a href="http://facebook.com">
+                  <!-- con la clase sr-only indicas que el texto solo estará disponible para screen-reader -->
+                  <span class="sr-only"> Facebook</span></a>
+              </li>
+              <li>
+                <a href="http://twitter.com">
+                  <span class="sr-only"> Twitter</span></a>
+              </li>
+              <li>
+                <a href="http://instagram.com">
+                  <span class="sr-only"> Instragram</span></a>
+              </li>
+              <li>
+                <a href="http://pinterest.com">
+                  <span class="sr-only"> Pinteres</span></a>
+              </li>
+              <li>
+                <a href="http://youtube.com">
+                  <span class="sr-only"> Youtube</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div><!--col md-4-->
+        <hr class="w-100">
+        <p class="text-center copyright w-100">Carolina Spa & Salon 2019</p>
+      </div><!--row-->
+    </div><!--container-->
+  </footer>
+
+  <script src="js/jquery.slim.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
