@@ -256,3 +256,10 @@ footer .copyright{
     font-family: 'Lato', sans-serif;
 }
 
+/* sidebar */
+
+aside {
+    background-color: #8ed3cc;
+    color: white;
+}
+
