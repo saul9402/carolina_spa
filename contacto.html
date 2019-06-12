@@ -75,7 +75,7 @@
               <a href="index.html" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="nosotros.html"class="nav-link">Nosotros</a>
+              <a href="nosotros.html" class="nav-link">Nosotros</a>
             </li>
             <li class="nav-item">
               <a href="servicios.html" class="nav-link">Servicios</a>
@@ -97,7 +97,7 @@
   <div class="container pt-4">
     <div class="row no-gutters">
       <div class="col-12 hero">
-        <img src="img/nosotros.jpg" class="img-fluid" alt="">
+        <img src="img/contacto.jpg" class="img-fluid" alt="">
         <h2 class="text-uppercase d-none d-md-block py-3 px-5">
           Titulo aqui
         </h2>
@@ -105,19 +105,46 @@
     </div>
   </div>
   <div class="container pt-4">
-    <div class="row">
+    <div class="row justify-content-center">
       <main class="col-lg-8 contenido principal">
         <h2 class="d-block d-md-none text-uppercase text-center">
-            Titulo aqui
+          Contacto
         </h2>
+        <form class="p-5 mt-5 formulario-contacto needs-validation" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="tu nombre" required>
+            <div class="invalid-feedback">
+              El nombre es obligatorio
+            </div>
+            <div class="valid-feedback">
+              Correcto
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="tu correo" required>
+            <div class="invalid-feedback">
+              El email es obligatorio
+            </div>
+            <div class="valid-feedback">
+              Correcto
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" cols="30" rows="5" id="mensaje" placeholder="tu mensaje" required></textarea>
+            <div class="invalid-feedback">
+              El mensaje es obligatorio
+            </div>
+            <div class="valid-feedback">
+              Correcto
+            </div>
+          </div>
+          <input type="submit" class="btn btn-primary text-uppercase" value="Enviar">
+        </form>
       </main>
-      <aside class="col-lg-4 pt-4 pt-lg-0">
-        <div class="sidebar">
-          <h2 class="text-center text-uppercase mt-4">
-            Algo aqui
-          </h2>
-        </div>
-      </aside>
+
     </div>
   </div>
   <footer class="footer-sitio pt-3 mt-5">
@@ -127,7 +154,8 @@
           <h3 class="text-uppercase text-center pb-4">
             Nosotros
           </h3>
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus voluptates quisquam, a,
+          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus
+            voluptates quisquam, a,
             incidunt veniam quas tempora voluptate id animi magni? Quia culpa minus maxime dolores ex voluptates
             consequatur autem! </p>
         </div>
@@ -168,11 +196,14 @@
               </li>
             </ul>
           </nav>
-        </div><!--col md-4-->
+        </div>
+        <!--col md-4-->
         <hr class="w-100">
         <p class="text-center copyright w-100">Carolina Spa & Salon 2019</p>
-      </div><!--row-->
-    </div><!--container-->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
   </footer>
 
   <script src="js/jquery.slim.js"></script>
