@@ -16,9 +16,8 @@
         }
       }
       /**Toda la validacoion se pone antes ya que se pretende redireccionar en caso de que algo salga mal */
-      include 'templates/header.php';
+      
       include 'templates/navegacion.php';
-
       include 'inc/funciones.php';
       /**
        * Con estas lineas de codigo muestra los errores en php
@@ -29,6 +28,8 @@
 
       if($resultado->num_rows > 0){
         while($producto = $resultado->fetch_assoc()){
+          $titulo = $producto['nombre'];
+          include 'templates/header.php';
   ?>
 
     <div class="container pt-4">
