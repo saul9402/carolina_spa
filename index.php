@@ -1,6 +1,7 @@
 <?php
       include 'templates/header.php';
       include 'templates/navegacion.php';
+      include 'inc/funciones.php';
 ?>
 
 
@@ -183,78 +184,30 @@
       <span class="text-lowercase d-block">Nuestros</span>Productos
     </h2>
     <div class="row py-5">
+      <?php
+          $productos = obtenerProductos(4);
+
+          while($producto = $productos->fetch_assoc()){      
+      ?>
       <div class="col-md-3 mb-4">
         <div class="card">
-          <a href="">
-            <img src="img/producto_mini_01.jpg" alt="" class="card-img-top">
+          <a href="producto.php?id=<?php echo $producto['id']; ?>">
+            <img src="img/<?php echo $producto['imagen_mini']; ?>" alt="" class="card-img-top">
             <div class="card-body">
               <h3 class="card-title text-center text-uppercase">
-                Producto 1
+                  <?php echo $producto['nombre']; ?>
               </h3>
               <p class="card-text text-uppercase">
-                Descripcion del producto
+                  <?php echo $producto['descripcion_corta']; ?>
               </p>
-              <p class="precio mb-0 lead text-center">$25</p>
+              <p class="precio mb-0 lead text-center"><?php echo $producto['precio']; ?></p>
             </div>
           </a>
         </div>
         <!--card-->
       </div>
       <!--col-md-3-->
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <a href="">
-            <img src="img/producto_mini_02.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <h3 class="card-title text-center text-uppercase">
-                Producto 2
-              </h3>
-              <p class="card-text text-uppercase">
-                Descripcion del producto
-              </p>
-              <p class="precio mb-0 lead text-center">$25</p>
-            </div>
-          </a>
-        </div>
-        <!--card-->
-      </div>
-      <!--col-md-3-->
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <a href="">
-            <img src="img/producto_mini_03.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <h3 class="card-title text-center text-uppercase">
-                Producto 3
-              </h3>
-              <p class="card-text text-uppercase">
-                Descripcion del producto
-              </p>
-              <p class="precio mb-0 lead text-center">$25</p>
-            </div>
-          </a>
-        </div>
-        <!--card-->
-      </div>
-      <!--col-md-3-->
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <a href="">
-            <img src="img/producto_mini_04.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <h3 class="card-title text-center text-uppercase">
-                Producto 4
-              </h3>
-              <p class="card-text text-uppercase">
-                Descripcion del producto
-              </p>
-              <p class="precio mb-0 lead text-center">$25</p>
-            </div>
-          </a>
-        </div>
-        <!--card-->
-      </div>
-      <!--col-md-3-->
+      <?php } ?>
 
     </div>
     <!--row-->
