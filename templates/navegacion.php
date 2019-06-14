@@ -18,19 +18,25 @@
           <!-- nav-justified permite separar los elementos de este menú cada uno con el mismo espacio y ocupando tdo el espacio disponible -->
           <!-- flex-column indica que se va a ver como columna y flex-sm-row indica que se verá como fila el sm indica a partir de que tamaños se aplicara cada estilo -->
           <ul class="nav nav-justified w-100 flex-column flex-sm-row">
-            <li class="nav-item">
+              <?php
+              /*la funcion basename permite asi com esta aqui permite saber que pagina es la que esta ejecutandose actualmente */
+                $archivo = basename($_SERVER['PHP_SELF']);
+                /*Funcion para reemplazar strings */
+                $pagina = str_replace('.php', '', $archivo);
+              ?>
+            <li class="nav-item <?php echo 'index' === $pagina ? 'active': ''  ?>" >
               <a href="index.php" class="nav-link">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item <?php echo 'nosotros' === $pagina ? 'active': ''  ?>">
               <a href="nosotros.php" class="nav-link">Nosotros</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item <?php echo 'servicios' === $pagina ? 'active': ''  ?>">
               <a href="servicios.php" class="nav-link">Servicios</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item <?php echo 'productos' === $pagina ? 'active': ''  ?>">
               <a href="productos.php" class="nav-link">Productos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item <?php echo 'contacto' === $pagina ? 'active': ''  ?>">
               <a href="contacto.php" class="nav-link">Contacto</a>
             </li>
           </ul>

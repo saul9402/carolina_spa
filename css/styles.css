@@ -98,6 +98,11 @@ body {
     color: black
 }
 
+.active{
+    background-color: #e082a8;
+    border-radius: 10px;
+}
+
 /* CARRUSEL */
 
 .carousel-caption h3 {
